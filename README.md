@@ -29,7 +29,7 @@ Leetcode AI/
 ├── icons/                 # Extension icons (add your icons here)
 ├── .env                   # Environment variables (not committed)
 ├── .gitignore             # Ignore .env, node_modules, build, etc.
-├── manifest.json          # Chrome extension manifest
+├── manifest.json          # Extension manifest
 ├── README.md              # This documentation
 └── ...
 ```
@@ -38,8 +38,8 @@ Leetcode AI/
 1. Clone or download this repository.
 2. Add your Gemini API key to the extension settings after installation, or set it in `.env` (for development only).
 3. Add your extension icons to the `icons/` folder.
-4. Load the extension in Chrome:
-   - Go to `chrome://extensions/`
+4. Load the extension in your browser:
+   - Go to your browser's extensions page (e.g., `chrome://extensions/`)
    - Enable Developer mode
    - Click "Load unpacked" and select this project folder
 5. Open any LeetCode problem page to use the AI mentor.
@@ -51,7 +51,7 @@ Leetcode AI/
 - Update `manifest.json` to reference correct paths if you move files.
 
 ## Environment Variables
-- `.env` is used for local development only. The extension stores the Gemini API key in Chrome storage for runtime use.
+- `.env` is used for local development only. The extension stores the Gemini API key in browser storage for runtime use.
 - Example:
   ```
   GEMINI_API_KEY=your-key-here
